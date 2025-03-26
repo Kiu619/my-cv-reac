@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+p {
+  @apply text-[#7f7f7f] text-[13px]
+}
+
+span {
+  @apply text-[#000]
+}
+
+button {
+  @apply cursor-pointer
+}
+
+.section-title {
+  @apply inline-block
+}
+
+.section-title h2 {
+  @apply text-lg font-semibold relative m-0 p-0 z-[2]
+}
+
+.section-title h2::after {
+  @apply content-[''] w-[105%] h-[7px] bg-[#ffb400] bottom-1 left-[-2.5%] block opacity-40 absolute z-[1]
+}
+
+.skill-list {
+  @apply px-5
+}
+
+.skill-list .progress {
+  @apply shadow-none bg-[#dfdfdf] rounded-[50px] w-full h-[5px] my-[10px] mb-5 block relative
+}
+
+.skill-list h3 {
+  @apply text-xs
+}
+
+.percentage {
+  @apply bg-[#ffb400]
+}
+
+.skill-list .progress .percentage {
+  @apply rounded-[50px_0_0_50px] absolute top-0 bottom-0
+}

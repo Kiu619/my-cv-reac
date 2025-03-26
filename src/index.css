@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+:root {
+  --primary-color: #eab308 /* yellow-500 default */
+}
+
+/* Thay thế các class có màu yellow-400/500 bằng CSS variable */
+.bg-yellow-400,
+.bg-yellow-500 {
+  background-color: var(--primary-color) !important
+}
+
+.text-yellow-400,
+.text-yellow-500 {
+  color: var(--primary-color) !important
+}
+
+.hover\:bg-yellow-400:hover,
+.hover\:bg-yellow-500:hover {
+  background-color: var(--primary-color) !important
+}
+
+.hover\:text-yellow-400:hover,
+.hover\:text-yellow-500:hover {
+  color: var(--primary-color) !important
+} 
